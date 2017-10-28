@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eed9a793-0b3a-47d9-95bb-c1e88c94d8e9" name="Default" comment="" />
+    <list default="true" id="eed9a793-0b3a-47d9-95bb-c1e88c94d8e9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RayCastVisualizer.java" afterPath="$PROJECT_DIR$/src/RayCastVisualizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SightDemo.java" afterPath="$PROJECT_DIR$/src/SightDemo.java" />
+    </list>
     <ignored path="RayCasting.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SightDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SightDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SightDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="62">
+              <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RayCastVisualizer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RayCastVisualizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RayCastVisualizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2055">
-              <caret line="137" column="41" lean-forward="false" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+            <state relative-caret-position="135">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,9 +120,9 @@
         <option value="$PROJECT_DIR$/src/LineSegment.java" />
         <option value="$PROJECT_DIR$/src/RayCast.java" />
         <option value="$PROJECT_DIR$/src/Intersection.java" />
-        <option value="$PROJECT_DIR$/src/SightDemo.java" />
-        <option value="$PROJECT_DIR$/src/RayCastVisualizer.java" />
         <option value="$PROJECT_DIR$/src/SightDemo2.java" />
+        <option value="$PROJECT_DIR$/src/RayCastVisualizer.java" />
+        <option value="$PROJECT_DIR$/src/SightDemo.java" />
       </list>
     </option>
   </component>
@@ -622,12 +625,12 @@
       <workItem from="1509133275776" duration="679000" />
       <workItem from="1509207634008" duration="310000" />
       <workItem from="1509208048144" duration="28000" />
-      <workItem from="1509208576386" duration="17000" />
+      <workItem from="1509208576386" duration="647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37439000" />
+    <option name="totallyTimeSpent" value="38069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1439" height="809" extended-state="6" />
@@ -641,7 +644,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3256445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3256445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -670,7 +673,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1056,20 +1059,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SightDemo2.java" />
-    <entry file="file://$PROJECT_DIR$/src/RayCastVisualizer.java">
+    <entry file="file://$PROJECT_DIR$/src/SightDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="137" column="41" lean-forward="false" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+        <state relative-caret-position="62">
+          <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SightDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/RayCastVisualizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

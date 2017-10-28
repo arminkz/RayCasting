@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,7 +8,7 @@ import java.util.Collections;
 /**
  * Created by Armin on 9/21/2017.
  */
-public class SightDemo extends JPanel implements MouseListener , MouseMotionListener{
+public class SightDemo extends JPanel implements MouseMotionListener{
 
     public static void main(String[] args) {
         JFrame window = new JFrame();
@@ -25,7 +24,6 @@ public class SightDemo extends JPanel implements MouseListener , MouseMotionList
 
     public SightDemo(){
         this.setBackground(Color.BLACK);
-        this.addMouseListener(this);
 
         this.setLayout(null);
 
@@ -115,14 +113,10 @@ public class SightDemo extends JPanel implements MouseListener , MouseMotionList
     }
 
     Point mousePos = new Point(1,1);
-    Point rayCenter = new Point(320,180);
-
-    //ArrayList<Point> currentRays = new ArrayList<>();
 
     @Override
     public void mouseMoved(MouseEvent e) {
         mousePos = new Point(e.getX(),e.getY());
-        //currentRays = castRaysToCornersOnly(mousePos,800);
         repaint();
     }
 
@@ -210,32 +204,6 @@ public class SightDemo extends JPanel implements MouseListener , MouseMotionList
         //g.fillPolygon(mainSightPoly);
 
     }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
-
 
     @Override
     public void mouseDragged(MouseEvent e) {

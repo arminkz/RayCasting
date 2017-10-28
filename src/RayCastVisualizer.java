@@ -1,15 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 
 /**
  * Created by Armin on 9/21/2017.
  */
-public class RayCastVisualizer extends JPanel implements MouseListener , MouseMotionListener{
+public class RayCastVisualizer extends JPanel implements MouseMotionListener{
 
     public static void main(String[] args) {
         JFrame window = new JFrame();
@@ -19,37 +17,14 @@ public class RayCastVisualizer extends JPanel implements MouseListener , MouseMo
         RayCastVisualizer rcv = new RayCastVisualizer();
 
         window.add(rcv);
-        //window.addMouseMotionListener(rcv);
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.setVisible(true);
     }
 
     public RayCastVisualizer(){
         this.setBackground(Color.BLACK);
-        this.addMouseListener(this);
-
-        JButton solveButton = new JButton("Solve !");
-        solveButton.setSize(100,30);
-        solveButton.setLocation(10,10);
-        solveButton.addActionListener((ActionEvent e) -> {startSolving();
-        });
-
-        JButton spButton = new JButton("Start Polygon");
-        spButton.setSize(100,30);
-        spButton.setLocation(120,10);
-        spButton.addActionListener((ActionEvent e) -> {startPolygon();
-        });
-
-        JButton epButton = new JButton("End Polygon");
-        epButton.setSize(100,30);
-        epButton.setLocation(230,10);
-        epButton.addActionListener((ActionEvent e) -> {endPolygon();
-        });
 
         this.setLayout(null);
-        //this.add(solveButton);
-        //this.add(spButton);
-        //this.add(epButton);
 
         initPolygons();
         initSegments();
@@ -128,7 +103,6 @@ public class RayCastVisualizer extends JPanel implements MouseListener , MouseMo
     }
 
     Point mousePos = new Point(1,1);
-    Point rayCenter = new Point(320,180);
 
     ArrayList<Point> currentRays = new ArrayList<>();
 
@@ -168,64 +142,6 @@ public class RayCastVisualizer extends JPanel implements MouseListener , MouseMo
         }
 
     }
-
-
-    Polygon activePoly;
-    ArrayList<Polygon> donePoly = new ArrayList<>();
-
-    Point p1 = new Point(500,600);
-    Point q1 = new Point(600,600);
-
-    Point p2 = new Point(500,550);
-    Point q2 = new Point(650,650);
-
-    boolean isDrawingPoly = false;
-
-    private void startPolygon(){
-        isDrawingPoly = true;
-        activePoly = new Polygon();
-    }
-
-    private void endPolygon(){
-        donePoly.add(activePoly);
-        isDrawingPoly = false;
-        repaint();
-    }
-
-    private void startSolving(){
-
-    }
-
-
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-        if(isDrawingPoly){
-            activePoly.addPoint(e.getX(),e.getY());
-        }
-        repaint();
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
-
 
     @Override
     public void mouseDragged(MouseEvent e) {
