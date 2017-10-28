@@ -1,4 +1,4 @@
-#RayCasting
+# RayCasting
 
 Simple 2D Ray Casting with Java. includes a Visualizer and a Line of Sight Demo.
 
