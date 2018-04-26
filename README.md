@@ -7,7 +7,7 @@ RayCast Visualizer
 
 
 <p align="center">
-  <img width="842" height="500" src="doc/raycast.gif?raw=true" />
+  <img width="500" height="297" src="doc/raycast.gif?raw=true" />
 </p>
 
 Line of Sight
@@ -15,5 +15,5 @@ Line of Sight
 
 
 <p align="center">
-  <img width="842" height="500" src="doc/lineofsight.gif?raw=true" />
+  <img width="500" height="297" src="doc/lineofsight.gif?raw=true" />
 </p>
